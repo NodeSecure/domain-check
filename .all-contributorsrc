@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Kawacrepe",
+      "name": "Vincent Dhennin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40260517?v=4",
+      "profile": "https://github.com/Kawacrepe",
+      "contributions": [
+        "code",
+        "review",
+        "doc",
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "authors",
+  "projectOwner": "NodeSecure",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

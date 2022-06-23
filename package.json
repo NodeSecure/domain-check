@@ -1,0 +1,41 @@
+{
+  "name": "email-check",
+  "version": "1.0.0",
+  "description": "NodeSecure (npm) email-check analysis package",
+  "exports": "./src/index.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "cross-env eslint ./src",
+    "test-only": "cross-env esm-tape-runner 'test/**/*.js' | tap-monkey",
+    "test": "npm run lint && npm run test-only",
+    "coverage": "c8 -r html npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NodeSecure/email-check.git"
+  },
+  "keywords": [
+    "NodeSecure",
+    "email-check",
+    "email",
+    "npm"
+  ],
+  "files": [
+    "src"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NodeSecure/email-check/issues"
+  },
+  "homepage": "https://github.com/NodeSecure/email-check#readme",
+  "devDependencies": {
+    "@nodesecure/eslint-config": "^1.4.1",
+    "@small-tech/esm-tape-runner": "^2.0.0",
+    "@small-tech/tap-monkey": "^1.4.0",
+    "c8": "^7.11.3",
+    "cross-env": "^7.0.3",
+    "tape": "^5.5.3"
+  }
+}
