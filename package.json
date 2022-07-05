@@ -1,11 +1,12 @@
 {
-  "name": "email-check",
+  "name": "domain-check",
   "version": "1.0.0",
-  "description": "NodeSecure (npm) email-check analysis package",
+  "description": "NodeSecure (npm) domain-check analysis package",
   "exports": "./src/index.js",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "node ./src/index.js",
     "lint": "cross-env eslint ./src",
     "test-only": "cross-env esm-tape-runner 'test/**/*.js' | tap-monkey",
     "test": "npm run lint && npm run test-only",
@@ -13,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NodeSecure/email-check.git"
+    "url": "git+https://github.com/NodeSecure/domain-check.git"
   },
   "keywords": [
     "NodeSecure",
-    "email-check",
+    "domain-check",
     "email",
     "npm"
   ],
@@ -27,9 +28,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NodeSecure/email-check/issues"
+    "url": "https://github.com/NodeSecure/domain-check/issues"
   },
-  "homepage": "https://github.com/NodeSecure/email-check#readme",
+  "homepage": "https://github.com/NodeSecure/domain-check#readme",
   "devDependencies": {
     "@nodesecure/eslint-config": "^1.4.1",
     "@small-tech/esm-tape-runner": "^2.0.0",
