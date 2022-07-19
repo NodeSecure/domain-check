@@ -24,11 +24,12 @@ $ yarn add @nodesecure/domain-check
 ## Usage example
 
 ```js
-import { main as domainCheck } from '@nodesecure/domain-check';
+import { whois, resolveMxRecords } from '@nodesecure/domain-check';
 
-const myDomain = 'bar.com';
+const myDomain = 'google.com';
 
-const domainInformations = await domainCheck(myDomain);
+const domainExpirationDate = await whois(myDomain);
+const mxRecords = await resolveMxRecords(myDomain);
 ```
 
 ## Contributors ✨

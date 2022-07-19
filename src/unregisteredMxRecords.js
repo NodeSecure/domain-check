@@ -1,4 +1,4 @@
-import dns from "dns/promises";
+import dns from "node:dns/promises";
 
 export async function resolveMxRecords(domain) {
   const mxRecords = await dns.resolveMx(domain)
@@ -7,7 +7,10 @@ export async function resolveMxRecords(domain) {
         : err.message));
 
   if (mxRecords instanceof Error) {
-    return mxRecords.message;
+    return {
+      error: mxRecords.message,
+      context: mxRecords
+    };
   }
 
   return mxRecords.map(({ exchange }) => exchange);
