@@ -1,5 +1,5 @@
 {
-  "name": "domain-check",
+  "name": "@nodesecure/domain-check",
   "version": "1.0.0",
   "description": "NodeSecure (npm) domain-check analysis package",
   "exports": "./src/index.js",
