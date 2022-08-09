@@ -5,6 +5,7 @@
   "exports": "./src/index.js",
   "main": "./src/index.js",
   "type": "module",
+  "types": "./index.d.ts",
   "scripts": {
     "dev": "node ./src/index.js",
     "lint": "cross-env eslint ./src",
