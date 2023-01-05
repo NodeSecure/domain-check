@@ -70,4 +70,3 @@ jobs:
         uses: github/codeql-action/upload-sarif@807578363a7869ca324a79039e6db9c843e0e100 # v2.1.27
         with:
           sarif_file: results.sarif
-0 comments on commit 9878f91
