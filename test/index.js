@@ -6,7 +6,7 @@ import assert from "node:assert";
 import { whois, resolveMxRecords } from "../src/index.js";
 
 // MX OK
-test("Given a valid domain, this test should pass", async(t) => {
+test("Given a valid domain, this test should pass", async() => {
   // Given
   const domain = "google.com";
 
@@ -18,7 +18,7 @@ test("Given a valid domain, this test should pass", async(t) => {
 });
 
 // MX KO
-test("Given an invalid domain, this test should not pass", async(t) => {
+test("Given an invalid domain, this test should not pass", async() => {
   // Given
   const domain = "aaa";
 
@@ -30,7 +30,7 @@ test("Given an invalid domain, this test should not pass", async(t) => {
 });
 
 // Socket
-test("Given a valid domain, this test should pass", async(t) => {
+test("Given a valid domain, this test should pass", async() => {
   // Given
   const domain = "google.com";
 
