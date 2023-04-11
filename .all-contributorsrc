@@ -34,6 +34,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "zwOk9",
+      "name": "zwOk9",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18079239?v=4",
+      "profile": "https://github.com/zwOk9",
+      "contributions": [
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
