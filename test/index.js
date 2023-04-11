@@ -1,11 +1,12 @@
-// Import Third-party Dependencies
-import test from "tape";
+// Import Node.js Dependencies
+import test from "node:test";
+import assert from "node:assert";
 
 // Import Internal Dependencies
 import { whois, resolveMxRecords } from "../src/index.js";
 
 // MX OK
-test("Given a valid domain, this test should pass", async(t) => {
+test("Given a valid domain, this test should pass", async() => {
   // Given
   const domain = "google.com";
 
@@ -13,12 +14,11 @@ test("Given a valid domain, this test should pass", async(t) => {
   const mxRecords = await resolveMxRecords(domain);
 
   // Then
-  t.equal(mxRecords[0], "smtp.google.com");
-  t.end();
+  assert.equal(mxRecords[0], "smtp.google.com");
 });
 
 // MX KO
-test("Given an invalid domain, this test should not pass", async(t) => {
+test("Given an invalid domain, this test should not pass", async() => {
   // Given
   const domain = "aaa";
 
@@ -26,12 +26,11 @@ test("Given an invalid domain, this test should not pass", async(t) => {
   const mxRecords = await resolveMxRecords(domain);
 
   // Then
-  t.equal(mxRecords.error, `queryMx ENODATA ${domain}`);
-  t.end();
+  assert.equal(mxRecords.error, `queryMx ENODATA ${domain}`);
 });
 
 // Socket
-test("Given a valid domain, this test should pass", async(t) => {
+test("Given a valid domain, this test should pass", async() => {
   // Given
   const domain = "google.com";
 
@@ -39,6 +38,5 @@ test("Given a valid domain, this test should pass", async(t) => {
   const domainExpirationDate = await whois(domain);
 
   // Then
-  t.isNot(domainExpirationDate, "");
-  t.end();
+  assert.notEqual(domainExpirationDate, "");
 });
