@@ -16,17 +16,6 @@ jobs:
         node-version: [16.x, 18.x]
       fail-fast: false
     steps:
-      - name: Harden Runner
-        uses: step-security/harden-runner@c8454efe5d0bdefd25384362fe217428ca277d57 # v2.2.0
-        with:
-          disable-sudo: true
-          egress-policy: audit
-          allowed-endpoints: >
-            github.com:443
-            registry.npmjs.org:443
-            whois.iana.org:43
-            whois.verisign-grs.com:43
-
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
