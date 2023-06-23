@@ -3,7 +3,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/NodeSecure/domain-check/graphs/commit-activity)
 [![OpenSSF
 Scorecard](https://api.securityscorecards.dev/projects/github.com/NodeSecure/domain-check/badge?style=for-the-badge)](https://api.securityscorecards.dev/projects/github.com/NodeSecure/domain-check)
-[![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=for-the-badge)](https://github.com/NodeSecure/domain-check/blob/main/LICENSE)
+[![mit](https://img.shields.io/github/license/NodeSecure/domain-check.svg?style=for-the-badge)](https://github.com/NodeSecure/domain-check/blob/main/LICENSE)
 ![build](https://img.shields.io/github/actions/workflow/status/NodeSecure/domain-check/main.yml?style=for-the-badge)
 
 NodeSecure (npm) domain-check analysis package
