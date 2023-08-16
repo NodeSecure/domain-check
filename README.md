@@ -34,10 +34,10 @@ const mxRecords = await resolveMxRecords(myDomain);
 
 ## API
 
-### whois(): string
+### whois(domain: string, server = "whois.iana.org"): string
 
-### resolveMxRecords(): (Array<string> | { error: string, context: Error })
-> "An array of MX exchanges, or an object with error information."
+### resolveMxRecords(domain: string): (Array<string> | { error: string, context: Error })
+> An array of MX exchanges, or an object with error information for the given domain.
 
 ## Contributors ✨
 
