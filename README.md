@@ -32,6 +32,13 @@ const domainExpirationDate = await whois(myDomain);
 const mxRecords = await resolveMxRecords(myDomain);
 ```
 
+## API
+
+### whois(): string
+
+### resolveMxRecords(): (Array<string> | { error: string, context: Error })
+> "An array of MX exchanges, or an object with error information."
+
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->

@@ -26,7 +26,7 @@ test("Given an invalid domain, this test should not pass", async() => {
   const mxRecords = await resolveMxRecords(domain);
 
   // Then
-  assert.equal(mxRecords.error, `queryMx ENODATA ${domain}`);
+  assert.equal(mxRecords.error, `queryMx EREFUSED ${domain}`);
 });
 
 // Socket
