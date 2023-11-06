@@ -1,4 +1,5 @@
 # NodeSecure domain-check
+
 ![version](https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&url=https://raw.githubusercontent.com/NodeSecure/domain-check/main/package.json&query=$.version&label=Version)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/NodeSecure/domain-check/graphs/commit-activity)
 [![OpenSSF
@@ -9,7 +10,8 @@ Scorecard](https://api.securityscorecards.dev/projects/github.com/NodeSecure/dom
 NodeSecure (npm) domain-check analysis package
 
 ## Requirements
-- [Node.js](https://nodejs.org/en/) v16 or higher
+
+- [Node.js](https://nodejs.org/en/) v18 or higher
 
 ## Getting Started
 
@@ -24,9 +26,9 @@ $ yarn add @nodesecure/domain-check
 ## Usage example
 
 ```js
-import { whois, resolveMxRecords } from '@nodesecure/domain-check';
+import { whois, resolveMxRecords } from "@nodesecure/domain-check";
 
-const myDomain = 'google.com';
+const myDomain = "google.com";
 
 const domainExpirationDate = await whois(myDomain);
 const mxRecords = await resolveMxRecords(myDomain);
@@ -37,12 +39,15 @@ const mxRecords = await resolveMxRecords(myDomain);
 ### whois(domain: string, server = "whois.iana.org"): string
 
 ### resolveMxRecords(domain: string): (Array<string> | { error: string, context: Error })
+
 > An array of MX exchanges, or an object with error information for the given domain.
 
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
