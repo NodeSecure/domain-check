@@ -38,6 +38,6 @@
   "homepage": "https://github.com/NodeSecure/domain-check#readme",
   "devDependencies": {
     "@nodesecure/eslint-config": "^1.6.0",
-    "c8": "^8.0.0"
+    "c8": "^9.1.0"
   }
 }
